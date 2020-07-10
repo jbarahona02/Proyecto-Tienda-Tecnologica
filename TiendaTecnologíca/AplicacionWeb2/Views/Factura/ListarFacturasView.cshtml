@@ -1,0 +1,41 @@
+﻿@model System.Collections.Generic.List<AplicacionWeb2.Entities.EncabezadoFactura>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/bundles/jqueryuiCss")
+@Styles.Render("~/bundles/ContextMenuCSS")
+@Scripts.Render("~/bundles/ContextMenuJS")
+@Scripts.Render("~/bundles/ContextMenuJS")
+@Scripts.Render("~/bundles/facturaJS")
+@Styles.Render("~/bundles/preloadCSS")
+@Scripts.Render("~/bundles/preloadJS")
+
+<body>
+    <table class="ui inverted table" id="tblFacturasCreadas">
+        <thead>
+            <tr>
+                <th> Código de Factura </th>
+                <th> Materiales en factura </th>
+                <th> Fecha </th>
+                <th> Cliente </th>
+                <th> NIT </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var factura in Model)
+            {
+                <tr id="@factura.codigoFactura">
+                    <td>@factura.codigoFactura</td>
+                    <td>@factura.DetalleFactura.Count</td>
+                    <td>@factura.fecha</td>
+                    <td>@factura.Cliente.nombreCliente  @factura.Cliente.apellidoCliente</td>
+                    <td>@factura.nit</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+

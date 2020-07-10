@@ -1,0 +1,37 @@
+﻿@model AplicacionWeb2.Entities.Cliente
+
+
+    <div class="ui header"> Modificar el cliente </div>
+    <div class="content">
+        <div class="ui inverted segment">
+            @using (Html.BeginForm("Modificar","Cliente",FormMethod.Post, new { @ID = "modificarForm", @CLASS = "ui inverted form" }))
+            {
+       
+                <div class="two fields">
+                    <div class="field">
+                        <label> Ingresa su nombre </label>
+                        @Html.EditorFor(m => m.nombreCliente, new { htmlAttributes = new { @Value = Model.nombreCliente, @PLACEHOLDER = "Nombre de cliente", @NAME = "nombreCliente" } })
+                    </div>
+
+                    <div class="field">
+                        <label> Ingresa sus apellidos </label>
+                        @Html.EditorFor(m => m.apellidoCliente, new { htmlAttributes = new { @Value = Model.apellidoCliente, @PLACEHOLDER = "Apellidos de cliente", @NAME = "apellidoCliente" } })
+                    </div>
+
+                    <div class="field">
+                        <label> Ingresa el teléfono </label>
+                        @Html.EditorFor(m => m.telefono, new { htmlAttributes = new { @Value = Model.telefono, @PLACEHOLDER = "Teléfono de cliente", @NAME = "telefono" } })
+                    </div>
+
+                    <div class="field">
+                        <label> Ingresa el NIT </label>
+                        @Html.EditorFor(m => m.NIT, new { htmlAttributes = new { @Value = Model.NIT, @PLACEHOLDER = "NIT de cliente", @NAME = "NIT", @ID = "nit",@DISABLED = true} })
+                    </div>
+                </div>
+
+                <button class="ui submit button"> Guardar </button>
+            }
+        </div>
+    </div>
+
+

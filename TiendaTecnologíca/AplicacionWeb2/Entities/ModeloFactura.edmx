@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DBAplicacion2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="NIT" />
+          </Key>
+          <Property Name="NIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="nombreCliente" Type="nvarchar" MaxLength="50" />
+          <Property Name="apellidoCliente" Type="nvarchar" MaxLength="50" />
+          <Property Name="telefono" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="codigoPosicion" />
+            <PropertyRef Name="codigoFactura" />
+          </Key>
+          <Property Name="codigoPosicion" Type="int" Nullable="false" />
+          <Property Name="codigoFactura" Type="int" Nullable="false" />
+          <Property Name="codigoMaterial" Type="int" />
+          <Property Name="cantidad" Type="int" />
+        </EntityType>
+        <EntityType Name="EncabezadoFactura">
+          <Key>
+            <PropertyRef Name="codigoFactura" />
+          </Key>
+          <Property Name="codigoFactura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nit" Type="nvarchar" MaxLength="10" />
+          <Property Name="fecha" Type="varchar" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="Materiales">
+          <Key>
+            <PropertyRef Name="codigoMaterial" />
+          </Key>
+          <Property Name="codigoMaterial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreMaterial" Type="nvarchar" MaxLength="50" />
+          <Property Name="detalleMaterial" Type="nvarchar" MaxLength="250" />
+          <Property Name="precioMaterial" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_DetalleFactura_EncabezadoFactura">
+          <End Role="EncabezadoFactura" Type="Self.EncabezadoFactura" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EncabezadoFactura">
+              <PropertyRef Name="codigoFactura" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="codigoFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleFactura_Materiales">
+          <End Role="Materiales" Type="Self.Materiales" Multiplicity="0..1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Materiales">
+              <PropertyRef Name="codigoMaterial" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="codigoMaterial" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EncabezadoFactura_Cliente">
+          <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+          <End Role="EncabezadoFactura" Type="Self.EncabezadoFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="NIT" />
+            </Principal>
+            <Dependent Role="EncabezadoFactura">
+              <PropertyRef Name="nit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBAplicacion2ModelStoreContainer">
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EncabezadoFactura" EntityType="Self.EncabezadoFactura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Materiales" EntityType="Self.Materiales" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DetalleFactura_EncabezadoFactura" Association="Self.FK_DetalleFactura_EncabezadoFactura">
+            <End Role="EncabezadoFactura" EntitySet="EncabezadoFactura" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleFactura_Materiales" Association="Self.FK_DetalleFactura_Materiales">
+            <End Role="Materiales" EntitySet="Materiales" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EncabezadoFactura_Cliente" Association="Self.FK_EncabezadoFactura_Cliente">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="EncabezadoFactura" EntitySet="EncabezadoFactura" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBAplicacion2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="NIT" />
+          </Key>
+          <Property Name="NIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="apellidoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EncabezadoFactura" Relationship="Self.FK_EncabezadoFactura_Cliente" FromRole="Cliente" ToRole="EncabezadoFactura" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="codigoPosicion" />
+            <PropertyRef Name="codigoFactura" />
+          </Key>
+          <Property Name="codigoPosicion" Type="Int32" Nullable="false" />
+          <Property Name="codigoFactura" Type="Int32" Nullable="false" />
+          <Property Name="codigoMaterial" Type="Int32" />
+          <Property Name="cantidad" Type="Int32" />
+          <NavigationProperty Name="EncabezadoFactura" Relationship="Self.FK_DetalleFactura_EncabezadoFactura" FromRole="DetalleFactura" ToRole="EncabezadoFactura" />
+          <NavigationProperty Name="Materiales" Relationship="Self.FK_DetalleFactura_Materiales" FromRole="DetalleFactura" ToRole="Materiales" />
+        </EntityType>
+        <EntityType Name="EncabezadoFactura">
+          <Key>
+            <PropertyRef Name="codigoFactura" />
+          </Key>
+          <Property Name="codigoFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nit" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="fecha" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Cliente" Relationship="Self.FK_EncabezadoFactura_Cliente" FromRole="EncabezadoFactura" ToRole="Cliente" />
+          <NavigationProperty Name="DetalleFactura" Relationship="Self.FK_DetalleFactura_EncabezadoFactura" FromRole="EncabezadoFactura" ToRole="DetalleFactura" />
+        </EntityType>
+        <EntityType Name="Materiales">
+          <Key>
+            <PropertyRef Name="codigoMaterial" />
+          </Key>
+          <Property Name="codigoMaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreMaterial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="detalleMaterial" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="precioMaterial" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DetalleFactura" Relationship="Self.FK_DetalleFactura_Materiales" FromRole="Materiales" ToRole="DetalleFactura" />
+        </EntityType>
+        <Association Name="FK_EncabezadoFactura_Cliente">
+          <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+          <End Role="EncabezadoFactura" Type="Self.EncabezadoFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="NIT" />
+            </Principal>
+            <Dependent Role="EncabezadoFactura">
+              <PropertyRef Name="nit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleFactura_EncabezadoFactura">
+          <End Role="EncabezadoFactura" Type="Self.EncabezadoFactura" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EncabezadoFactura">
+              <PropertyRef Name="codigoFactura" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="codigoFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleFactura_Materiales">
+          <End Role="Materiales" Type="Self.Materiales" Multiplicity="0..1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Materiales">
+              <PropertyRef Name="codigoMaterial" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="codigoMaterial" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBAplicacion2Entities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+          <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" />
+          <EntitySet Name="EncabezadoFactura" EntityType="Self.EncabezadoFactura" />
+          <EntitySet Name="Materiales" EntityType="Self.Materiales" />
+          <AssociationSet Name="FK_EncabezadoFactura_Cliente" Association="Self.FK_EncabezadoFactura_Cliente">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="EncabezadoFactura" EntitySet="EncabezadoFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleFactura_EncabezadoFactura" Association="Self.FK_DetalleFactura_EncabezadoFactura">
+            <End Role="EncabezadoFactura" EntitySet="EncabezadoFactura" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleFactura_Materiales" Association="Self.FK_DetalleFactura_Materiales">
+            <End Role="Materiales" EntitySet="Materiales" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBAplicacion2ModelStoreContainer" CdmEntityContainer="DBAplicacion2Entities4">
+          <EntitySetMapping Name="Cliente">
+            <EntityTypeMapping TypeName="DBAplicacion2Model.Cliente">
+              <MappingFragment StoreEntitySet="Cliente">
+                <ScalarProperty Name="NIT" ColumnName="NIT" />
+                <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+                <ScalarProperty Name="apellidoCliente" ColumnName="apellidoCliente" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleFactura">
+            <EntityTypeMapping TypeName="DBAplicacion2Model.DetalleFactura">
+              <MappingFragment StoreEntitySet="DetalleFactura">
+                <ScalarProperty Name="codigoPosicion" ColumnName="codigoPosicion" />
+                <ScalarProperty Name="codigoFactura" ColumnName="codigoFactura" />
+                <ScalarProperty Name="codigoMaterial" ColumnName="codigoMaterial" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EncabezadoFactura">
+            <EntityTypeMapping TypeName="DBAplicacion2Model.EncabezadoFactura">
+              <MappingFragment StoreEntitySet="EncabezadoFactura">
+                <ScalarProperty Name="codigoFactura" ColumnName="codigoFactura" />
+                <ScalarProperty Name="nit" ColumnName="nit" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Materiales">
+            <EntityTypeMapping TypeName="DBAplicacion2Model.Materiales">
+              <MappingFragment StoreEntitySet="Materiales">
+                <ScalarProperty Name="codigoMaterial" ColumnName="codigoMaterial" />
+                <ScalarProperty Name="nombreMaterial" ColumnName="nombreMaterial" />
+                <ScalarProperty Name="detalleMaterial" ColumnName="detalleMaterial" />
+                <ScalarProperty Name="precioMaterial" ColumnName="precioMaterial" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

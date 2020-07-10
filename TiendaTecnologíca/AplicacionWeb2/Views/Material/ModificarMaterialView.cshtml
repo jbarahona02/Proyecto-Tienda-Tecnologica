@@ -1,0 +1,36 @@
+﻿@model  AplicacionWeb2.Entities.Materiales
+
+<!Doctype html>
+<head>
+</head>
+<body>
+    <div class="ui header">  Modificar un material </div>
+    <div class="content">
+            <div class="ui inverted segment">
+                @using (Html.BeginForm("ModificarMaterial", "Material",FormMethod.Post, new { @ID = "modificarMaterialForm", @CLASS = "ui inverted form" }))
+                {
+                    @Html.HiddenFor(m => m.codigoMaterial)
+
+                    <div class="two fields">
+                        <div class="field">
+                            <label> Nombre de material </label>
+                            @Html.EditorFor(m => m.nombreMaterial, new { htmlAttibutes = new { @PLACEHOLDER = "Nombre de material", @VALUE = Model.nombreMaterial, @NAME = "nombreMaterial" } })
+                        </div>
+
+                        <div class="field">
+                            <label> Detalle de material </label>
+                            @Html.EditorFor(m => m.detalleMaterial, new { htmlAttributes = new { @PLACEHOLDER = "Detalle de material", @VALUE = Model.detalleMaterial, @NAME = "detalleMaterial" } })
+                        </div>
+
+                        <div class="field">
+                            <label> Precio de material </label>
+                            @Html.EditorFor(m => m.detalleMaterial, new { htmlAttributes = new { @PLACEHOLDER = "Precio de material", @VALUE = Model.precioMaterial, @NAME = "precioMaterial" } })
+                        </div>
+                    </div>
+
+                    <button class="ui submit button"> Guardar</button>
+                }
+            </div>
+    </div>
+ </body>
+

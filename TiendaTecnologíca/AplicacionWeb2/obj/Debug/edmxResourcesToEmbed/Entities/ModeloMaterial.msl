@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBAplicacion2ModeloMaterialStoreContainer" CdmEntityContainer="DBAplicacion2Entities3">
+    <EntitySetMapping Name="Materiales">
+      <EntityTypeMapping TypeName="DBAplicacion2ModeloMaterial.Materiales">
+        <MappingFragment StoreEntitySet="Materiales">
+          <ScalarProperty Name="codigoMaterial" ColumnName="codigoMaterial" />
+          <ScalarProperty Name="nombreMaterial" ColumnName="nombreMaterial" />
+          <ScalarProperty Name="detalleMaterial" ColumnName="detalleMaterial" />
+          <ScalarProperty Name="precioMaterial" ColumnName="precioMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,75 @@
+﻿@model AplicacionWeb2.Models.ViewModels.MaterialModels.MaterialModelView
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    @Scripts.Render("~/bundles/materialJS")
+    @Styles.Render("~/bundles/jqueryuiCss")
+    @Styles.Render("~/bundles/ContextMenuCSS")
+    @Scripts.Render("~/bundles/ContextMenuJS")
+    @Scripts.Render("~/bundles/jqueryuiJS")
+    @Styles.Render("~/bundles/iziToastCSS")
+    @Scripts.Render("~/bundles/iziToastJS")
+</head>
+<body>
+
+    <!-- Creación de tabla materiales -->
+    <table class="ui inverted table" id="tblMateriales">
+        <thead>
+            <tr>
+                <th> Nombdre de Material </th>
+                <th> Detalle de Material </th>
+                <th> Precio </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.listaMateriales.Count > 0) {
+                foreach (var material in Model.listaMateriales) {
+                   <tr id="@material.codigoMaterial">
+                       <td> @material.nombreMaterial</td>
+                       <td> @material.detalleMaterial</td>
+                       <td> @material.precioMaterial</td>
+                   </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <button class="ui secondary button" id="btnAgregar"> Agregar </button>
+
+    <!-- Inicio de formulario crear material para el modal-->
+        <div class="ui modal">
+            <div class="ui header"> Agregar un material </div>
+            <div class="content">
+                <div class="ui inverted segment">
+                    @using (Html.BeginForm("Material", "Crear", FormMethod.Post, new { @ID = "crearMaterialForm", @CLASS = "ui inverted form" }))
+                    {
+                            <div class="two fields">
+                                <div class="field">
+                                    <label> Nombre del Material</label>
+                                    @Html.EditorFor(m => m.material.nombreMaterial, new { htmlAttributes = new { @PLACEHOLDER = "Nombre de material", @NAME = "nombreMaterial" } })
+                                </div>
+
+                                <div class="field">
+                                    <label> Detalle de Material </label>
+                                    @Html.EditorFor(m => m.material.detalleMaterial, new { htmlAttributes = new { @PLACEHOLDER = "Detalle de material", @NAME = "detalleMaterial" } })
+                                </div>
+
+                                <div class="field">
+                                    <label> Precio de Material </label>
+                                    @Html.EditorFor(m => m.material.precioMaterial, new { htmlAttributes = new { @PLACEHOLDER = "Precio de material", @NAME = "precioMaterial" } })
+                                </div>
+                            </div>
+                            <button class="ui submit button"> Guardar </button>
+                    }
+                    </div>
+            </div>
+        </div>
+
+        <!-- Creación de modal para vista parcial para modificar-->
+        <div class="ui modal" id="modalModificarMaterial">
+
+        </div>
+</body>

@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <head>
+        @Scripts.Render("~/bundles/principalJS")
+        @Styles.Render("~/bundles/responsiveSlidesCSS")
+        @Scripts.Render("~/bundles/responsiveSlidesJS")
+    </head>
+    <body>
+        <div class="ui inverted vertical masthead center aligned  segment">
+
+            <!-- Es el segmento negro que guarda todo lo de la vista principal-->
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    Bienvenido
+                </h1>
+                <h2> </h2>
+            </div>
+
+            <!-- Es el grupo de imágenes que tiene el carrusel de imágenes -->
+            <div id="slide">
+                <ul class="rslides">
+                    <li>
+                        <img src="~/assets/images/Imagen1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="~/assets/images/Imagen2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="~/assets/images/Imagen3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            
+    
+
+
+    </body>
+
+
+

@@ -1,0 +1,180 @@
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\AplicacionWeb2.dll.config
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\AplicacionWeb2.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\AplicacionWeb2.pdb
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csc.exe
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csc.exe.config
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csc.rsp
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csi.exe
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csi.exe.config
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\csi.rsp
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.AppContext.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Console.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.IO.Compression.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Claims.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.ValueTuple.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\vbc.exe
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\vbc.exe.config
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\vbc.rsp
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Antlr3.Runtime.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Newtonsoft.Json.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Helpers.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Mvc.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Optimization.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Razor.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\WebGrease.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Helpers.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Mvc.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Optimization.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.Razor.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Newtonsoft.Json.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Antlr3.Runtime.pdb
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.Razor.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\obj\Debug\AplicacionWeb2.csprojAssemblyReference.cache
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\obj\Debug\AplicacionWeb2.csproj.CoreCompileInputs.cache
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\obj\Debug\AplicacionWeb2.csproj.CopyComplete
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\obj\Debug\AplicacionWeb2.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\obj\Debug\AplicacionWeb2.pdb
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\EntityFramework.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\EntityFramework.SqlServer.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\EntityFramework.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\EntityFramework.SqlServer.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Select.HtmlToPdf.dll
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Select.HtmlToPdf.xml
+C:\Users\Javier\source\repos\AplicacionWeb2\AplicacionWeb2\bin\Select.Html.dep
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\AplicacionWeb2.dll.config
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\AplicacionWeb2.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\AplicacionWeb2.pdb
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csc.exe
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csc.exe.config
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csc.rsp
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csi.exe
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csi.exe.config
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\csi.rsp
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.AppContext.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Console.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.IO.Compression.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Claims.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.ValueTuple.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\vbc.exe
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\vbc.exe.config
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\vbc.rsp
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Antlr3.Runtime.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\EntityFramework.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\EntityFramework.SqlServer.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Newtonsoft.Json.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Select.HtmlToPdf.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Helpers.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Mvc.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Optimization.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Razor.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\WebGrease.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\EntityFramework.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\EntityFramework.SqlServer.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Select.HtmlToPdf.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Helpers.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Mvc.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Optimization.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.Razor.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Newtonsoft.Json.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Antlr3.Runtime.pdb
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.Razor.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\bin\Select.Html.dep
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\obj\Debug\AplicacionWeb2.csprojAssemblyReference.cache
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\obj\Debug\AplicacionWeb2.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\obj\Debug\AplicacionWeb2.csproj.CopyComplete
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\obj\Debug\AplicacionWeb2.dll
+C:\Users\Javier\Desktop\Proyectos a Git\Tienda tecnologica\AplicacionWeb2\obj\Debug\AplicacionWeb2.pdb

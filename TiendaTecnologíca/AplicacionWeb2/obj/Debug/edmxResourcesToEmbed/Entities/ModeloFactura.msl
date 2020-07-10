@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBAplicacion2ModelStoreContainer" CdmEntityContainer="DBAplicacion2Entities4">
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="DBAplicacion2Model.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+          <ScalarProperty Name="apellidoCliente" ColumnName="apellidoCliente" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFactura">
+      <EntityTypeMapping TypeName="DBAplicacion2Model.DetalleFactura">
+        <MappingFragment StoreEntitySet="DetalleFactura">
+          <ScalarProperty Name="codigoPosicion" ColumnName="codigoPosicion" />
+          <ScalarProperty Name="codigoFactura" ColumnName="codigoFactura" />
+          <ScalarProperty Name="codigoMaterial" ColumnName="codigoMaterial" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EncabezadoFactura">
+      <EntityTypeMapping TypeName="DBAplicacion2Model.EncabezadoFactura">
+        <MappingFragment StoreEntitySet="EncabezadoFactura">
+          <ScalarProperty Name="codigoFactura" ColumnName="codigoFactura" />
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materiales">
+      <EntityTypeMapping TypeName="DBAplicacion2Model.Materiales">
+        <MappingFragment StoreEntitySet="Materiales">
+          <ScalarProperty Name="codigoMaterial" ColumnName="codigoMaterial" />
+          <ScalarProperty Name="nombreMaterial" ColumnName="nombreMaterial" />
+          <ScalarProperty Name="detalleMaterial" ColumnName="detalleMaterial" />
+          <ScalarProperty Name="precioMaterial" ColumnName="precioMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,59 @@
+﻿@model AplicacionWeb2.Models.ViewModels.Login.LoginViewModel
+
+@{
+    //Evita que podamos regresar a la página anterior.
+    Response.Cache.SetCacheability(HttpCacheability.ServerAndNoCache);
+    Response.Cache.SetAllowResponseInBrowserHistory(false);
+    Response.Cache.SetNoStore();
+
+    //Devuelve la ruta de la aplicacion
+    String contentRoot = Url.Content("~/");
+    String applicationRoot = Request.Url.Scheme + "://" + Request.Url.Authority + contentRoot.Substring(0, contentRoot.Length - 1);
+}
+
+<!Doctype html>
+<html lang="ES-es" data-root="@applicationRoot">
+<head>
+    <meta charset="utf-8">
+    <title> Login </title>
+    @Styles.Render("~/bundles/SemanticCSS")
+    @Styles.Render("~/bundles/estiloCSS")
+    @Styles.Render("~/bundles/iziToastCSS")
+    @Scripts.Render("~/bundles/iziToastJS")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/SemanticJS")
+    @Scripts.Render("~/bundles/Loginjs")
+</head>
+<body>
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <h2 class="ui teal image header">
+                <i class="user circle icon"></i>
+                <div class="content">
+                    Log-in
+                </div>
+            </h2>
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @ID = "loginForm", @CLASS = "ui large form" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            @Html.EditorFor(m => m.email, new { htmlAttributes = new { @PLACEHOLDER = "Correo", @NAME = "email" } })
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            @Html.EditorFor(m => m.password, new { htmlAttributes = new { @PLACEHOLDER = "Contraseña", @NAME = "password" } })
+                        </div>
+                    </div>
+                    <button class="ui fluid large teal submit button">Login</button>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+﻿@using AplicacionWeb2.Entities
+
+@{
+    //Evita que podamos regresar a la página anterior.
+    Response.Cache.SetCacheability(HttpCacheability.ServerAndNoCache);
+    Response.Cache.SetAllowResponseInBrowserHistory(false);
+    Response.Cache.SetNoStore();
+
+    //Devuelve la ruta de la aplicacion
+    String contentRoot = Url.Content("~/");
+    String applicationRoot = Request.Url.Scheme + "://" + Request.Url.Authority + contentRoot.Substring(0, contentRoot.Length - 1);
+
+    // Permite obtener del usuario que inicio la sesión el nombre
+            var user = ((Usuario)Session["usuario"]).nombres;
+}
+
+<!DOCTYPE html>
+<html data-root="@applicationRoot">
+<head>
+    <meta charet="utf-8" />
+    @Styles.Render("~/bundles/SemanticCSS")
+    @Styles.Render("~/bundles/iziToastCSS")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/SemanticJS")
+    @Scripts.Render("~/bundles/iziToastJS")
+    @Styles.Render("~/bundles/estiloCSS")
+</head>
+<body id="cuerpo">
+    <!-- Comienza el menú que llevaran todas la vistas-->
+    <div class="ui black five item inverted menu mnu">
+        <a href="~/Principal/PrincipalView"><image class="ui small image" id="img" src="~/assets/images/Logo.png"></a>
+        
+        <a class="teal item opcion right" href="~/Cliente/ClienteView"> Clientes </a>
+        <a class="teal item opcion right"  href="~/Material/MaterialView"> Materiales </a>
+        <a class="teal item opcion right" href="~/Factura/FacturaView"> Facturas</a>
+        <a class="teal item opcion right" href="~/Factura/ListarFacturasView"> Lista Facturas</a>
+
+        <!-- Permite generar un submenú a una opción del menú-->
+        <div class="right menu">
+            <div class="ui simple dropdown item" id="NombreUs">
+                @user  <i class="dropdown icon"></i>
+
+                <!-- Permite poner un menú al nombre de usuario y poder cerrar sesión -->
+                <div class="menu">
+                    <a class="item" href="~/Principal/CerrarSesion"> <i class="user icon"></i> Cerrar sesión </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Renderiza la vista para que funcione-->
+    @RenderBody()
+</body>
+</html>

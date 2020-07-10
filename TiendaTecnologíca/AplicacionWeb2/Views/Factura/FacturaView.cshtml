@@ -1,0 +1,76 @@
+﻿@using AplicacionWeb2.Entities;
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Cliente> listaClientes = ViewBag.clientes;
+    List<Materiales> listaMateriales = ViewBag.materiales;
+}
+
+<head>
+    @Scripts.Render("~/bundles/facturaJS")
+    @Styles.Render("~/bundles/jqueryuiCss")
+    @Scripts.Render("~/bundles/jqueryuiJS")
+</head>
+<body>
+    <div class="ui black big label">
+        Fecha
+        <div class="ui inverted input">
+            <input type="text" placeholder="" id="fecha" disabled>
+        </div>
+    </div>
+
+    
+    <div class="ui inverted segment">
+        <div class="ui inverted form">
+            <div class="two fields">
+                <div class="field">
+                    <label>NIT de cliente</label>
+                    <select class="ui dropdown" id="listaCli">
+                        <option value=""> NIT </option>
+                        @foreach (var c in listaClientes)
+                        {
+                            <option value="@c.NIT">@c.NIT</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label> Nombre de cliente </label>
+                    <input placeholder="Nombre" type="text" id="nombreCli" disabled>
+                </div>
+
+                <div class="field">
+                    <label> Teléfono de cliente </label>
+                    <input placeholder="Teléfono" type="text" id="telefonoCli" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="ui-widget ui input">
+            <input id="tags" placeholder="Seleccione el material">
+        </div>
+
+        <button class="ui secondary button" id="btnAgregar">
+            Agregar Material
+        </button>
+
+        <table class="ui inverted table" id="tblFacturas">
+            <thead>
+                <tr>
+                    <th> Código material </th>
+                    <th> Descripción de Material </th>
+                    <th> Precio unitario </th>
+                    <th> Cantidad </th>
+                    <th> Precio total</th>
+                    <th> Eliminar </th>
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    <button class="ui secondary button" id="btnPDF" >
+        Guardar Factura
+    </button>
+</body>

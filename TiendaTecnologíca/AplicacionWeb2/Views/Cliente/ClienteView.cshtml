@@ -1,0 +1,84 @@
+﻿@model  AplicacionWeb2.Models.ViewModels.ClienteModels.ClienteModel
+@{ 
+    // se manda a llamar a la vista parcial
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    @Scripts.Render("~/bundles/clienteJS")
+    @Styles.Render("~/bundles/jqueryuiCss")
+    @Styles.Render("~/bundles/ContextMenuCSS")
+    @Scripts.Render("~/bundles/ContextMenuJS")
+    @Scripts.Render("~/bundles/jqueryuiJS")
+    @Styles.Render("~/bundles/iziToastCSS")
+    @Scripts.Render("~/bundles/iziToastJS")
+</head>
+<body>
+    <!-- Comienza la generacion de la tabla-->
+    <table class="ui inverted table" id="tblClientes">
+        <thead>
+            <tr>
+                <th> Nombres </th>
+                <th> Apellidos </th>
+                <th> Teléfono </th>
+                <th> Nit </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Bucle para recorrer cada elemento del modelo, para ello se le manda a la lista del modelo una lista de clientes de la DB-->
+            @if (Model.listaClientes.Count > 0) {
+            foreach (var cliente in Model.listaClientes) {
+                <tr id="@cliente.NIT">
+                    <td> @cliente.nombreCliente</td>
+                    <td> @cliente.apellidoCliente</td>
+                    <td> @cliente.telefono</td>
+                    <td> @cliente.NIT</td>
+                 </tr>
+            }
+            }
+        </tbody>
+    </table>
+
+    <button class="ui secondary button" id="btnAgregar"> Agregar </button>
+
+    <!-- Generación de ventana modal para crear un cliente -->
+        <div class="ui modal ">
+
+          
+            <div class="ui header"> Agrega un cliente </div>
+            <div class="content">
+                <div class="ui inverted segment">
+                    <!-- Inicio de formulario-->
+                    @using (Html.BeginForm("Cliente", "Crear", FormMethod.Post, new { @ID = "crearForm", @CLASS = "ui inverted form" }))
+                    {
+                        <div class="two fields">
+                            <div class="field">
+                                <label> Ingresa su nombre </label>
+                                @Html.EditorFor(m => m.cliente.nombreCliente, new { htmlAttributes = new { @PLACEHOLDER = "Nombre de cliente", @NAME = "nombreCliente" } })
+                            </div>
+                            <div class="field">
+                                <label> Ingresa sus apellidos </label>
+                                @Html.EditorFor(m => m.cliente.apellidoCliente, new { htmlAttributes = new { @PLACEHOLDER = "Apellidos del cliente", @NAME = "apellidoCliente" } })
+                            </div>
+                            <div class="field">
+                                <label> Ingresa el número de teléfono </label>
+                                @Html.EditorFor(m => m.cliente.telefono, new { htmlAttributes = new { @PLACEHOLDER = "Teléfono de cliente", @NAME = "telefono" } })
+                            </div>
+                            <div class="field">
+                                <label> Ingrese el NIT del cliente </label>
+                                @Html.EditorFor(m => m.cliente.NIT, new { htmlAttributes = new { @PLACEHOLDER = "NIT del cliente", @NAME = "NIT",@ID="nit"} })
+                            </div>
+                        </div>
+                        <button class="ui submit button" id="btnGuardar"> Guardar </button>
+                    }
+                </div>
+            </div>
+            <!-- Termina el formuario-->
+        </div>
+   
+    <!-- Generación de la vista modal para actualizar el cliente-->
+    <div class="ui modal" id="modalModificar">
+
+    </div>
+  
+</body>

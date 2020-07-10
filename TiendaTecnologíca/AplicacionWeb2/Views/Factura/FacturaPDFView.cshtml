@@ -1,0 +1,98 @@
+﻿@model AplicacionWeb2.Entities.EncabezadoFactura
+<!Doctype html>
+<html lang="ES-es">
+<head>
+    <meta charset="UTF  -8">
+    @Styles.Render("~/bundles/bootstrapCSS")
+    @Styles.Render("~/bundles/estiloPDFCSS")
+    @Styles.Render("~/bundles/preloadCSS")
+    @Scripts.Render("~/bundles/preloadJS")
+</head>
+<body id="CuerpoPDF">
+    <div class="container Contenedores">
+        <div class="row header-row">
+            <div class="col">
+                <h2 id="NFactura">Factura No.@Model.codigoFactura</h2>
+            </div>
+            <div class="col">
+                <img id="Logo" src="~/assets/images/Logo.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container Contenedores">
+        <div class="row header-row">
+            <div class="col">
+                <label class="Datos"> Cliente </label>
+            </div>
+            <div class="col">
+                <label class="Datos"> Teléfono</label>
+            </div>
+            <div class="col">
+                <label class="Datos"> NIT </label>
+            </div>
+        </div>
+
+        <div class="row header-row">
+            <div class="col">
+                <label class="DatosCli"> @Model.Cliente.nombreCliente  </label>
+            </div>
+            <div class="col">
+                <label class="DatosCli">  @Model.Cliente.telefono </label>
+            </div>
+            <div class="col">
+                <label class="DatosCli"> @Model.nit </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container Contenedores">
+        <div class="row header-row">
+            <div class="col">
+                <label class="Datos"> Código de Material </label>
+            </div>
+            <div class="col">
+                <label class="Datos"> Descripción de Material </label>
+            </div>
+            <div class="col">
+                <label class="Datos"> Precio Unitario </label>
+            </div>
+            <div class="col">
+                <label class="Datos"> Cantidad </label>
+            </div>
+            <div class="col">
+                <label class="Datos"> Precio Total </label>
+            </div>
+        </div>
+
+        @foreach (var fac in Model.DetalleFactura)
+        {
+            <div class="row header-row">
+
+                <div class="col">
+                    <label class="DatosCli"> @fac.codigoMaterial</label>
+                </div>
+                <div class="col">
+                    <label class="DatosCli"> @fac.Materiales.detalleMaterial</label>
+                </div>
+                <div class="col">
+                    <label class="DatosCli"> @fac.Materiales.precioMaterial</label>
+                </div>
+                <div class="col">
+                    <label class="DatosCli"> @fac.cantidad</label>
+                </div>
+                @{
+                    double precio = Double.Parse(fac.Materiales.precioMaterial.Substring(1));
+                    var cantidad = fac.cantidad;
+                    var total = precio * cantidad;
+
+                    <div class="col">
+                        <label class="DatosCli">Q @total</label>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>
+
